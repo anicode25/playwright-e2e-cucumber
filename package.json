@@ -11,7 +11,8 @@
     "test:cucumber:html": "node generate-report.js",
     "test:cucumber:all": "npm run test:cucumber || true && npm run test:cucumber:html && start cucumber-report/report.html",
     "test:cucumber:smoke": "npx cucumber-js --tags \"@smoke\" --format json:cucumber-report/report.json",
-    "test:cucumber:regression": "npx cucumber-js --tags \"@regression\" --format json:cucumber-report/report.json"
+    "test:cucumber:regression": "npx cucumber-js --tags \"@regression\" --format json:cucumber-report/report.json",
+    "sonar": "dotenv -e .env -- sonar-scanner -Dsonar.login=$SONAR_TOKEN"
   },
   "keywords": [],
   "author": "",
@@ -22,7 +23,10 @@
     "@cucumber/html-formatter": "^21.13.0",
     "@playwright/test": "^1.54.2",
     "@types/node": "^24.2.0",
+    "cross-env": "^10.0.0",
     "cucumber-html-reporter": "^7.2.0",
+    "dotenv-cli": "^10.0.0",
+    "sonarqube-scanner": "^4.3.0",
     "ts-node": "^10.9.2"
   },
   "dependencies": {
