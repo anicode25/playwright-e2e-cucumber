@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 729091199
+              "duration": 869514400
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 210600800
+              "duration": 284385600
             }
           },
           {
@@ -45,7 +45,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 24922700
+              "duration": 38780600
             }
           },
           {
@@ -58,7 +58,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 36876600
+              "duration": 30556399
             }
           }
         ],
@@ -68,7 +68,7 @@
             "line": 1
           },
           {
-            "name": "@possitive",
+            "name": "@positive",
             "line": 4
           }
         ],
@@ -92,6 +92,107 @@
     "elements": [
       {
         "description": "",
+        "id": "logout-functionality;logout-from-the-application",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Logout from the application",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am logged in as standard user",
+            "match": {
+              "location": "tests\\steps\\logout.step.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 246093700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I click on the menu button",
+            "match": {
+              "location": "tests\\steps\\logout.step.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 68054399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I select the logout option",
+            "match": {
+              "location": "tests\\steps\\logout.step.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 979500000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should be redirected to the login page",
+            "match": {
+              "location": "tests\\steps\\logout.step.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25797099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I should see the login form displayed",
+            "match": {
+              "location": "tests\\steps\\logout.step.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52927000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "logout-functionality",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Logout Functionality",
+    "tags": [
+      {
+        "name": "@smoke",
+        "line": 1
+      }
+    ],
+    "uri": "tests\\features\\logout.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
         "id": "add-to-cart;add-a-product-to-the-cart",
         "keyword": "Scenario",
         "line": 5,
@@ -107,7 +208,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 181731299
+              "duration": 253248099
             }
           },
           {
@@ -120,7 +221,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 81767400
+              "duration": 84063600
             }
           },
           {
@@ -133,7 +234,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16689600
+              "duration": 25273899
             }
           },
           {
@@ -146,7 +247,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 76331900
+              "duration": 121542699
             }
           }
         ],
@@ -156,7 +257,7 @@
             "line": 1
           },
           {
-            "name": "@possitive",
+            "name": "@positive",
             "line": 4
           }
         ],
@@ -180,6 +281,133 @@
     "elements": [
       {
         "description": "",
+        "id": "product-checkout-functionality;checkout-a-product-successfully",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Checkout a product successfully",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am logged by standard user",
+            "match": {
+              "location": "tests\\steps\\product_checkout.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 214416300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I add a product to the cart",
+            "match": {
+              "location": "tests\\steps\\product_checkout.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 189964100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I proceed to checkout",
+            "match": {
+              "location": "tests\\steps\\product_checkout.steps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 83603200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I fill in the checkout information",
+            "match": {
+              "location": "tests\\steps\\product_checkout.steps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 76222399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I complete the checkout process",
+            "match": {
+              "location": "tests\\steps\\product_checkout.steps.ts:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 138510100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see the order confirmation page",
+            "match": {
+              "location": "tests\\steps\\product_checkout.steps.ts:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11151400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Order status should be displayed correctly",
+            "match": {
+              "location": "tests\\steps\\product_checkout.steps.ts:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11013699
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "product-checkout-functionality",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Product Checkout Functionality",
+    "tags": [
+      {
+        "name": "@smoke",
+        "line": 1
+      }
+    ],
+    "uri": "tests\\features\\product_checkout.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
         "id": "page-title;verify-the-title",
         "keyword": "Scenario",
         "line": 4,
@@ -195,7 +423,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 44761400
+              "duration": 44941199
             }
           },
           {
@@ -208,7 +436,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 20857499
+              "duration": 27146800
             }
           }
         ],
