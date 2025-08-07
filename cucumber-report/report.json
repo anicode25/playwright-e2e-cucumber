@@ -1,0 +1,236 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-functionality;login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Login with valid credentials",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am on the login page",
+            "match": {
+              "location": "tests\\steps\\login.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 729091199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I enter valid credentials and click login",
+            "match": {
+              "location": "tests\\steps\\login.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 210600800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should be redirected to the products page",
+            "match": {
+              "location": "tests\\steps\\login.steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24922700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I should see the products displayed",
+            "match": {
+              "location": "tests\\steps\\login.steps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36876600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          },
+          {
+            "name": "@possitive",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-functionality",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Login Functionality",
+    "tags": [
+      {
+        "name": "@smoke",
+        "line": 1
+      }
+    ],
+    "uri": "tests\\features\\login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "add-to-cart;add-a-product-to-the-cart",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Add a product to the cart",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am logged in as a standard user",
+            "match": {
+              "location": "tests\\steps\\product_add_to_cart.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 181731299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I add the Sauce Labs Backpack to the cart",
+            "match": {
+              "location": "tests\\steps\\product_add_to_cart.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 81767400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the cart count should be 1",
+            "match": {
+              "location": "tests\\steps\\product_add_to_cart.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16689600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the cart should contain Sauce Labs Backpack",
+            "match": {
+              "location": "tests\\steps\\product_add_to_cart.steps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 76331900
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          },
+          {
+            "name": "@possitive",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "add-to-cart",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Add to Cart",
+    "tags": [
+      {
+        "name": "@smoke",
+        "line": 1
+      }
+    ],
+    "uri": "tests\\features\\product_add_to_cart.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "page-title;verify-the-title",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Verify the title",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open the homepage",
+            "match": {
+              "location": "tests\\steps\\title_verification.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44761400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the title should be \"Swag Labs\"",
+            "match": {
+              "location": "tests\\steps\\title_verification.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20857499
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "page-title",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Page title",
+    "tags": [
+      {
+        "name": "@smoke",
+        "line": 1
+      }
+    ],
+    "uri": "tests\\features\\title_verification.feature"
+  }
+]
