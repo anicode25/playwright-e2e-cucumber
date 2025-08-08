@@ -6,5 +6,5 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 .env
-cucumber_report/
+cucumber-report/
 .scannerwork/
