@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1838395699
+              "duration": 1326416800
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 327259500
+              "duration": 185386700
             }
           },
           {
@@ -45,7 +45,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 45002099
+              "duration": 31464500
             }
           },
           {
@@ -58,7 +58,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 60104599
+              "duration": 39973600
             }
           }
         ],
@@ -107,7 +107,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 279541900
+              "duration": 174753300
             }
           },
           {
@@ -120,7 +120,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 60631300
+              "duration": 50033300
             }
           },
           {
@@ -133,7 +133,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1042899100
+              "duration": 993408300
             }
           },
           {
@@ -146,7 +146,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 21320999
+              "duration": 12137399
             }
           },
           {
@@ -159,7 +159,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 28634900
+              "duration": 14410200
             }
           }
         ],
@@ -208,7 +208,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 270109400
+              "duration": 196291799
             }
           },
           {
@@ -221,7 +221,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 96997599
+              "duration": 56663499
             }
           },
           {
@@ -234,7 +234,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 38167900
+              "duration": 9735000
             }
           },
           {
@@ -247,7 +247,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 128401300
+              "duration": 76948999
             }
           }
         ],
@@ -296,7 +296,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 233884300
+              "duration": 152124200
             }
           },
           {
@@ -309,7 +309,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 153224300
+              "duration": 99781500
             }
           },
           {
@@ -322,7 +322,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 75589100
+              "duration": 62582699
             }
           },
           {
@@ -335,7 +335,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 97696400
+              "duration": 55116800
             }
           },
           {
@@ -348,7 +348,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 180035299
+              "duration": 118125100
             }
           },
           {
@@ -361,7 +361,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13066999
+              "duration": 6421500
             }
           },
           {
@@ -374,7 +374,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12070599
+              "duration": 5480400
             }
           }
         ],
@@ -408,6 +408,116 @@
     "elements": [
       {
         "description": "",
+        "id": "remove-the-product-from-cart;remove-a-product-from-the-cart",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Remove a product from the cart",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am on the homepage",
+            "match": {
+              "location": "tests\\steps\\product_remove_from_cart.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 147216000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I add 'Sauce Labs Onesie' to the cart",
+            "match": {
+              "location": "tests\\steps\\product_remove_from_cart.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53668400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I view the cart",
+            "match": {
+              "location": "tests\\steps\\product_remove_from_cart.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53343800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should see 'Sauce Labs Onesie' in the cart",
+            "match": {
+              "location": "tests\\steps\\product_remove_from_cart.steps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6851499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I remove 'Sauce Labs Onesie' from the cart",
+            "match": {
+              "location": "tests\\steps\\product_remove_from_cart.steps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35414800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "'Sauce Labs Onesie' should not be in the cart",
+            "match": {
+              "location": "tests\\steps\\product_remove_from_cart.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3474500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "remove-the-product-from-cart",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Remove the product from Cart",
+    "tags": [
+      {
+        "name": "@smoke",
+        "line": 1
+      }
+    ],
+    "uri": "tests\\features\\product_remove_from_cart.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
         "id": "page-title;verify-the-title",
         "keyword": "Scenario",
         "line": 4,
@@ -423,7 +533,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 51453700
+              "duration": 31498700
             }
           },
           {
@@ -436,7 +546,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 32263200
+              "duration": 17045900
             }
           }
         ],
