@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1326416800
+              "duration": 808462000
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 185386700
+              "duration": 192703700
             }
           },
           {
@@ -45,7 +45,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 31464500
+              "duration": 25045500
             }
           },
           {
@@ -58,7 +58,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 39973600
+              "duration": 33884300
             }
           }
         ],
@@ -107,7 +107,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 174753300
+              "duration": 172052899
             }
           },
           {
@@ -120,7 +120,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 50033300
+              "duration": 46323300
             }
           },
           {
@@ -133,7 +133,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 993408300
+              "duration": 977349999
             }
           },
           {
@@ -146,7 +146,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12137399
+              "duration": 14223899
             }
           },
           {
@@ -159,7 +159,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14410200
+              "duration": 14967099
             }
           }
         ],
@@ -208,7 +208,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 196291799
+              "duration": 202369899
             }
           },
           {
@@ -221,7 +221,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 56663499
+              "duration": 84255900
             }
           },
           {
@@ -234,7 +234,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9735000
+              "duration": 17434199
             }
           },
           {
@@ -247,7 +247,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 76948999
+              "duration": 66182499
             }
           }
         ],
@@ -296,7 +296,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 152124200
+              "duration": 151308300
             }
           },
           {
@@ -309,7 +309,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 99781500
+              "duration": 86172099
             }
           },
           {
@@ -322,7 +322,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 62582699
+              "duration": 50657200
             }
           },
           {
@@ -335,7 +335,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 55116800
+              "duration": 49603799
             }
           },
           {
@@ -348,7 +348,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 118125100
+              "duration": 99092099
             }
           },
           {
@@ -361,7 +361,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6421500
+              "duration": 9887099
             }
           },
           {
@@ -374,7 +374,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5480400
+              "duration": 5763100
             }
           }
         ],
@@ -423,7 +423,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 147216000
+              "duration": 163431600
             }
           },
           {
@@ -436,7 +436,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 53668400
+              "duration": 59795799
             }
           },
           {
@@ -449,7 +449,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 53343800
+              "duration": 54487999
             }
           },
           {
@@ -462,7 +462,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6851499
+              "duration": 4031500
             }
           },
           {
@@ -475,7 +475,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 35414800
+              "duration": 48338300
             }
           },
           {
@@ -488,7 +488,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3474500
+              "duration": 4367500
             }
           }
         ],
@@ -518,6 +518,116 @@
     "elements": [
       {
         "description": "",
+        "id": "reset-app-state;reset-the-app-state",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Reset the app state",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open the homepage first",
+            "match": {
+              "location": "tests\\steps\\reset_app_state.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 158696099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "Add Sauce Labs Backpack to the cart",
+            "match": {
+              "location": "tests\\steps\\reset_app_state.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50901100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Cart count should be 1",
+            "match": {
+              "location": "tests\\steps\\reset_app_state.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28909999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I reset the app state from menu",
+            "match": {
+              "location": "tests\\steps\\reset_app_state.steps.ts:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1042727600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "The app should be in its initial state",
+            "match": {
+              "location": "tests\\steps\\reset_app_state.steps.ts:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6869999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "The title should be 'Swag Labs'",
+            "match": {
+              "location": "tests\\steps\\reset_app_state.steps.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5164099
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "reset-app-state",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Reset App State",
+    "tags": [
+      {
+        "name": "@smoke",
+        "line": 1
+      }
+    ],
+    "uri": "tests\\features\\reset_app_state.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
         "id": "page-title;verify-the-title",
         "keyword": "Scenario",
         "line": 4,
@@ -533,7 +643,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 31498700
+              "duration": 35807099
             }
           },
           {
@@ -546,7 +656,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 17045900
+              "duration": 15333300
             }
           }
         ],
