@@ -9,7 +9,7 @@
     "test:report": "npx playwright show-report",
     "test:cucumber": "npx cucumber-js --format json:cucumber-report/report.json",
     "test:cucumber:html": "node generate-report.js",
-    "test:cucumber:all": "npm run test:cucumber || true && npm run test:cucumber:html && start cucumber-report/report.html",
+    "test:cucumber:all": "npm run test:cucumber && npm run test:cucumber:html",
     "test:cucumber:smoke": "npx cucumber-js --tags \"@smoke\" --format json:cucumber-report/report.json",
     "test:cucumber:regression": "npx cucumber-js --tags \"@regression\" --format json:cucumber-report/report.json",
     "sonar": "dotenv -e .env -- sonar-scanner -Dsonar.login=$SONAR_TOKEN"
@@ -26,6 +26,7 @@
     "cross-env": "^10.0.0",
     "cucumber-html-reporter": "^7.2.0",
     "dotenv-cli": "^10.0.0",
+    "multiple-cucumber-html-reporter": "^3.9.3",
     "sonarqube-scanner": "^4.3.0",
     "ts-node": "^10.9.2"
   },
