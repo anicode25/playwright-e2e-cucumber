@@ -1,4 +1,4 @@
-@smoke
+@locked_out_user @smoke
 Feature: Login Functionality
 
   @positive
