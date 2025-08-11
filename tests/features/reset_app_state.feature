@@ -1,4 +1,4 @@
-@smoke
+@smoke @regession
 Feature: Reset App State
 
     Scenario: Reset the app state

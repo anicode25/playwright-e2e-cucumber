@@ -1,4 +1,4 @@
-@smoke
+@smoke @regression
 Feature: Remove the product from Cart
 
     Scenario: Remove a product from the cart
