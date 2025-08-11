@@ -5,7 +5,7 @@ let browser: Browser;
 export let page: Page;
 
 BeforeAll(async () => {
-  browser = await chromium.launch({ headless: false });
+  browser = await chromium.launch({ headless: true });
   const context = await browser.newContext();
   page = await context.newPage();
 });
