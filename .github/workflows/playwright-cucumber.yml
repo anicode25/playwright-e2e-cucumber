@@ -25,14 +25,18 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
-      # Run cucumber tests + generate HTML report
-      - name: Run Playwright Cucumber tests
-        run: npm run test:cucumber:all
+      # Step 1: Run Cucumber tests and generate JSON
+      - name: Run Cucumber tests (JSON output)
+        run: npm run test:cucumber
 
-      # Upload the Cucumber HTML report as an artifact
+      # Step 2: Generate HTML report from JSON
+      - name: Generate HTML report
+        run: npm run test:cucumber:html
+
+      # Step 3: Upload HTML report folder
       - name: Upload Cucumber HTML report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: cucumber-html-report
-          path: cucumber-report/html  
+          path: cucumber-report/html
