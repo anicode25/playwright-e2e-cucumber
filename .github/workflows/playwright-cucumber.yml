@@ -27,6 +27,10 @@ jobs:
 
       # Step 1: Run Cucumber tests and generate JSON
       - name: Run Cucumber tests (JSON output)
+        env:
+          baseURL: ${{ secrets.BASE_URL }}
+          STANDARD_USER: ${{ secrets.STANDARD_USER }}
+          PASSWORD: ${{ secrets.PASSWORD }}
         run: npm run test:cucumber
 
       # Step 2: Generate HTML report from JSON
