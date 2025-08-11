@@ -1,17 +1,31 @@
 const report = require('multiple-cucumber-html-reporter');
+const os = require('os');
+const { execSync } = require('child_process');
+
+// Detect platform info
+const platformName = os.platform() === 'win32' ? 'windows' : os.platform();
+const platformVersion = os.release();
+
+// Detect Chrome version from Playwright (works for Chromium too)
+let browserVersion = 'unknown';
+try {
+  browserVersion = execSync('npx playwright --version').toString().trim();
+} catch (err) {
+  console.error('Could not detect browser version', err);
+}
 
 report.generate({
-  jsonDir: 'cucumber-report', // The folder containing the Cucumber JSON
-  reportPath: 'cucumber-report/html', // The output folder for HTML
+  jsonDir: 'cucumber-report',
+  reportPath: 'cucumber-report/html',
   metadata: {
     browser: {
-      name: 'chrome',
-      version: '126'
+      name: 'chromium', // match your Playwright browser name
+      version: browserVersion
     },
-    device: 'Local test machine',
+    device: os.hostname(),
     platform: {
-      name: 'windows',
-      version: '10'
+      name: platformName,
+      version: platformVersion
     }
   },
   customData: {
@@ -24,4 +38,3 @@ report.generate({
     ]
   }
 });
-
